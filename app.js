@@ -54,7 +54,7 @@ response.on("data", function(data){
     console.log(JSON.parse(data));
 })
 })
-//request.write(postData);
+request.write(postData);
 request.end();
 
 });
@@ -62,8 +62,8 @@ app.post("/failure",function(req,res){
     res.redirect("/");
 })
 
-app.listen(process.env.PORT,function(){
- console.log("Server is running on port 5000");
+app.listen(process.env.PORT || 3000,function(){
+ console.log("Server is running on port 3000");
 });
 
 //a1f024121dadb540f026ffa3458edb65-us18
