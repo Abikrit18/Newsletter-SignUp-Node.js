@@ -2,6 +2,16 @@ html,
 body{
     height: 100%;
 }
+.main-body{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+input, button{
+  margin: 5px;
+}
 
 body{
   display: table-cell;
